@@ -2,6 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import {RFPercentage} from 'react-native-responsive-fontsize';
 import HomeScreen from '../../screens/HomeScreen';
+import BottomTabNavigator from './BottomTabNavigator';
 
 const Stack = createStackNavigator();
 const AuthNavigator = () => {
@@ -22,7 +23,7 @@ const AuthNavigator = () => {
       <Stack.Screen
         options={{headerShown: false}}
         name="AuthenticateUser"
-        component={HomeScreen}
+        component={BottomTabNavigator}
       />
     </Stack.Navigator>
   );
